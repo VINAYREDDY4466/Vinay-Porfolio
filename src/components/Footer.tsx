@@ -9,23 +9,23 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="text-2xl font-bold mb-4">
-              <span className="text-white">M</span> MELLOW
+             <a href="/"> <span className="text-white"></span> Vinay Reddy Dodlapati</a>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              A product designer specializing in creating magical visual identities for digital products. 
-              Let's create something amazing together.
+              I'm an full-stack web developer with a passion for crafting seamless user experiences.
+              Let's collaborate and bring your vision to life !
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="/" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="/" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/vinayreddyd/" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="/https://github.com/VINAYREDDY4466" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
                 <Github size={18} />
               </a>
             </div>
@@ -44,22 +44,18 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><span className="text-gray-400">Product Design</span></li>
+              <li><span className="text-gray-400">Websites</span></li>
               <li><span className="text-gray-400">UI/UX Design</span></li>
-              <li><span className="text-gray-400">Brand Strategy</span></li>
-              <li><span className="text-gray-400">Consultation</span></li>
+              <li><span className="text-gray-400">App Devlopment</span></li>
+              <li><span className="text-gray-400">Website Maintainence</span></li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-center items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Mellow White. All rights reserved.
+            © 2024. All rights reserved.
           </p>
-          <div className="flex space-x-8 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Terms of Service</a>
-          </div>
         </div>
       </div>
     </footer>

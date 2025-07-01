@@ -1,48 +1,75 @@
 
+
 import React from 'react';
 import { ArrowRight, Sparkles, Package, Pen, Rocket } from 'lucide-react';
-
+import { Icon } from '@radix-ui/react-select';
+import { ShoppingCart, Globe, LayoutTemplate, Spline, Code, Network, PencilRuler } from "lucide-react";
 const Services = () => {
-  const services = [
-    {
-      icon: <Sparkles className="w-8 h-8" />,
-      title: "Brand Strategy",
-      description: "A strong brand strategy defines what a brand stands for, promises to its customers, and how it communicates those promises through product development.",
-      tags: ["BRAND POSTURE", "CONSUMER BEHAVIOURS", "NARRATIVE STRATEGY", "OFFER FRAMEWORK"],
-      delay: "0s"
-    },
-    {
-      icon: <Package className="w-8 h-8" />,
-      title: "Product Design",
-      description: "The process of creating and developing a product with the goal of solving a specific problem or fulfilling a user need involves a functionality, aesthetics and usability.",
-      tags: ["WEB PLATFORM", "MOBILE APPLICATION", "CREATIVE DESIGN SOLUTIONS", "AI CONSULTING"],
-      delay: "0.2s"
-    },
-    {
-      icon: <Pen className="w-8 h-8" />,
-      title: "UI UX Design",
-      description: "Creating digital products that are both visually appealing and easy to use having focus on different aspects of the user's interaction with a product.",
-      tags: ["VISUAL DESIGN", "CUSTOMER EXPERIENCE", "PROTOTYPING", "WIREFRAMES", "WEB DESIGN"],
-      delay: "0.4s"
-    },
-    {
-      icon: <Rocket className="w-8 h-8" />,
-      title: "SEO Services",
-      description: "Aim to increase organic (non-paid) traffic by optimizing various elements of a website, making it more attractive to both users and search engines.",
-      tags: ["PPC ADVERTISING", "SEO AUDITS", "OFF-PAGE SEO", "KEYWORD RESEARCH", "LINK BUILDING"],
-      delay: "0.6s"
-    }
-  ];
+  interface Services{
+     icon: React.ReactNode;
+     title:string;
+     description:string;
+     tags:string[];
+     delay: string;
+
+  }
+
+
+const services: Services[] = [
+  {
+    icon: <ShoppingCart className="w-8 h-8" />,
+    title: "E-Commerce Development",
+    description: "Build dynamic, scalable e-commerce platforms with secure payment integrations, user-friendly interfaces, and inventory management systems.",
+    tags: ["SHOPPING CART", "PAYMENT INTEGRATION", "USER ACCOUNTS", "PRODUCT MANAGEMENT"],
+    delay: "0s"
+  },
+  {
+    icon: <Globe className="w-8 h-8" />,
+    title: "Static & Dynamic Websites",
+    description: "Design responsive static and dynamic websites with fast load times and SEO-friendly architecture for businesses and individuals.",
+    tags: ["RESPONSIVE DESIGN", "HTML/CSS/JS", "REACT/NEXTJS", "SEO BEST PRACTICES"],
+    delay: "0.2s"
+  },
+  {
+    icon: <Network className="w-8 h-8" />,
+    title: "System Design & Architecture",
+    description: "Architect scalable backend systems using modern technologies and design principles for high availability, performance, and maintainability.",
+    tags: ["MICROSERVICES", "LOAD BALANCING", "API DESIGN", "DATABASE SCALING"],
+    delay: "0.4s"
+  },
+  {
+    icon: <PencilRuler className="w-8 h-8" />,
+    title: "Figma to Code",
+    description: "Convert beautiful UI/UX designs from Figma into high-quality, responsive front-end code using modern frameworks and best practices.",
+    tags: ["FIGMA INTERPRETATION", "PIXEL PERFECT DESIGN", "REACT IMPLEMENTATION", "UI COMPONENT LIBRARIES"],
+    delay: "0.6s"
+  },
+  {
+    icon: <Code className="w-8 h-8" />,
+    title: "Full Stack Web Applications",
+    description: "Build robust full stack applications with seamless frontend-backend integration using the MERN/MEVN stack or similar technologies.",
+    tags: ["NODE.JS", "MONGODB", "EXPRESS", "REACT/VUE", "AUTHENTICATION"],
+    delay: "0.8s"
+  },
+  {
+    icon: <Spline className="w-8 h-8" />,
+    title: "Admin Dashboards",
+    description: "Develop custom admin panels and dashboards for managing users, analytics, product data, and more with a user-centric approach.",
+    tags: ["CHARTS", "CRUD OPERATIONS", "ROLE MANAGEMENT", "REAL-TIME UPDATES"],
+    delay: "1s"
+  }
+];
+
 
   return (
     <section id="services" className="bg-black text-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-gray-400 text-lg mb-4 animate-fade-in">What I do</p>
-          <h2 className="text-4xl lg:text-6xl font-bold mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            DIGITAL PRODUCT DESIGN
+          <p className="text-gray-400 text-4xl mb-4 animate-fade-in">What I do</p>
+          <h2 className="text-2xl lg:text-3xl font-bold mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            Web Development Services
             <br />
-            <span className="text-gray-300">SERVICES I OFFER</span>
+        
           </h2>
         </div>
 
