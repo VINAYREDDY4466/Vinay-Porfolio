@@ -11,42 +11,42 @@ const Works = () => {
       category: 'Dynamic',
       image: '../../public/allday.png',
       tags: ['BRANDING'],
-      link: 'https://alldays-z-rv8n.vercel.app/'
+      link: 'https://res.cloudinary.com/ddjcvxwtn/image/upload/v1751396682/allday_kdaq3b.png'
     },
     {
       title: 'Evemen (E-commerce)',
       category: 'Dynamic',
       image: '../../public/evemen (1).png',
       tags: ['MARKETING'],
-      link: 'https://evemen.co/'
+      link: 'https://res.cloudinary.com/ddjcvxwtn/image/upload/v1751396702/evemen_1_osqsov.png'
     },
     {
       title: 'Trenzza (E-commerce)',
       category: 'Dynamic',
       image: '../../public/trenzza.png',
       tags: ['CREATIVE'],
-      link: 'https://trenzza.in'
+      link: 'https://res.cloudinary.com/ddjcvxwtn/image/upload/v1751396691/trenzza_jlsn7y.png'
     },
     {
       title: 'Personal Portfolio',
       category: 'Static',
       image: '../../public/portfolilo.png',
       tags: ['CREATIVE'],
-      link: 'https://vinayportfoilo.netlify.app/'
+      link: 'https://res.cloudinary.com/ddjcvxwtn/image/upload/v1751396759/portfolilo_qfcwvx.png'
     },
     {
       title: 'Pickles Website',
       category: 'Static',
       image: '../../public/pickle.png',
       tags: ['CREATIVE'],
-      link: 'https://ammammapachadlu2.vercel.app/'
+      link: 'https://res.cloudinary.com/ddjcvxwtn/image/upload/v1751396749/pickle_ng573d.png'
     },
     {
       title: 'Locol Volunteer Network',
       category: 'Static',
       image: '../../public/lvn.png',
       tags: ['CREATIVE'],
-      link: 'https://lvn-frontend.vercel.app/'
+      link: 'https://res.cloudinary.com/ddjcvxwtn/image/upload/v1751396736/lvn_kg0eya.png'
     }
   ];
 

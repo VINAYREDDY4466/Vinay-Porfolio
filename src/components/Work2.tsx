@@ -9,12 +9,12 @@ const Work2 = () => {
     {
       title: 'Github',
       image: '../../public/github.png',
-      link: 'https://github.com/VINAYREDDY4466'
+      link: 'https://res.cloudinary.com/ddjcvxwtn/image/upload/v1751396583/github_zlyvxr.png'
     },
     {
       title: 'Leetcode',
       image: '../../public/leetcode.png', 
-      link: 'https://leetcode.com/u/CR7_Vinay/'
+      link: 'https://res.cloudinary.com/ddjcvxwtn/image/upload/v1751396583/leetcode_fdn6hg.png'
     },
   
   ];
