@@ -3,10 +3,9 @@ import React from 'react';
 
 const Stats = () => {
   const stats = [
-    { number: '12+', label: 'Years of experience' },
-    { number: '6', label: 'Awards won' },
+    { number: '3+', label: 'Years of experience' },
     { number: '30+', label: 'Projects completed' },
-    { number: '4K', label: 'Happy clients' }
+    { number: '10+', label: 'Happy clients' }
   ];
 
   return (
@@ -16,7 +15,7 @@ const Stats = () => {
           <p className="text-gray-400 text-xl">The Numbers</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}

@@ -2,39 +2,55 @@
 import React from 'react';
 
 const Experience = () => {
-  const experiences = [
-    {
-      company: 'Logoipsum',
-      period: 'Aug 2023 – Present',
-      position: 'Associate Creative Director',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.',
-      logo: '🔥'
-    },
-    {
-      company: 'ACME Digital.',
-      period: 'May 2021 – Jun 2023',
-      position: 'Senior Product Designer',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.',
-      logo: '⚡'
-    }
-  ];
+const experiences = [
+  {
+    company: 'Personal Freelancing',
+    period: 'Jan 2025 – Present',
+    position: 'MERN Stack Developer',
+    description: 'Collaborating with local clients to design and deploy full-stack web applications using React.js, Node.js, MongoDB, and Express. Managing both frontend and backend independently while ensuring responsiveness and performance.',
+    logo: '🔥'
+  },
+  {
+    company: 'East IT Consulting Pvt Ltd',
+    period: 'Nov 2023 – Dec 2024',
+    position: 'Jr MERN Stack Developer',
+    description: 'Worked on web development projects for a US-based client, Jim Martin. Developed and maintained features using React, Redux, and Node.js. Collaborated with UI/UX designers and integrated REST APIs efficiently.',
+    logo: '⚡'
+  },
+  {
+    company: 'RK Info Systems',
+    period: 'Mar 2023 – Sep 2023',
+    position: 'Software Engineer Intern',
+    description: 'Supported senior developers by debugging, refactoring, and testing existing modules. Gained hands-on experience with version control systems and Agile methodologies in a real-time project environment.',
+    logo: '⚡'
+  }
+];
 
-  const education = [
-    {
-      school: 'Logoipsum',
-      period: 'Nov 2017 – Dec 2019',
-      degree: 'Cranfield University, UK',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      logo: '✨'
-    },
-    {
-      school: 'DSGN School, UK',
-      period: 'Aug 2013 – Oct 2016',
-      degree: 'Msc in Innovation Design',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.',
-      logo: '⚡'
-    }
-  ];
+
+ const education = [
+  {
+    school: 'Anurag Group of Institutions',
+    period: 'Aug 2019 – Aug 2023',
+    degree: 'Bachelor of Technology in Computer Science',
+    description: 'Completed core coursework in Data Structures, DBMS, Web Technologies, and Java Programming. Actively participated in tech fests and group projects with a focus on real-world problem-solving.',
+    logo: '✨'
+  },
+  {
+    school: 'Narayana Junior College',
+    period: 'Jun 2017 – May 2019',
+    degree: 'Intermediate (MPC Stream)',
+    description: 'Studied Mathematics, Physics, and Chemistry with a strong foundation in analytical thinking and problem-solving skills. Maintained consistent academic performance.',
+    logo: '⚡'
+  },
+  {
+    school: 'Krishnaveni Talent School',
+    period: '2017 Passed Out',
+    degree: 'Secondary School Certificate (SSC)',
+    description: 'Built a solid academic base with an emphasis on discipline, communication, and logical reasoning. Secured top scores in mathematics and science subjects.',
+    logo: '⚡'
+  }
+];
+
 
   return (
     <section id="experience" className="bg-black text-white py-20">

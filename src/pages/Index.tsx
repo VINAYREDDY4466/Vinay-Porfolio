@@ -6,11 +6,11 @@ import Services from '../components/Services';
 import Experience from '../components/Experience';
 import Works from '../components/Works';
 import About from '../components/About';
-import Process from '../components/Process';
 import Tools from '../components/Tools';
 import Stats from '../components/Stats';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Work2 from '@/components/Work2';
 
 const Index = () => {
   return (
@@ -18,11 +18,11 @@ const Index = () => {
       <Navigation />
       <Hero />
       <Services />
-      <Experience />
       <Works />
-      <About />
-      <Process />
       <Tools />
+      <Work2/>
+       <Experience />
+       <About />
       <Stats />
       <Contact />
       <Footer />

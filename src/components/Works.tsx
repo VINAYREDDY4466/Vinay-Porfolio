@@ -1,43 +1,67 @@
-
 import React, { useState } from 'react';
 
 const Works = () => {
-  const [activeFilter, setActiveFilter] = useState('ALL');
+  const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['ALL', 'BRANDING', 'CREATIVE', 'MARKETING', 'VISUAL'];
+  const filters = ['All', 'Dynamic', 'Static'];
 
   const projects = [
     {
-      title: 'Pressed Juicery',
-      category: 'Branding',
-      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop',
-      tags: ['BRANDING']
+      title: 'Allday (Website)',
+      category: 'Dynamic',
+      image: '../../public/allday.png',
+      tags: ['BRANDING'],
+      link: 'https://alldays-z-rv8n.vercel.app/'
     },
     {
-      title: 'Nouri Probiotic',
-      category: 'Marketing',
-      image: 'https://images.unsplash.com/photo-1556909909-4c3c3c3c3c3c?w=600&h=400&fit=crop',
-      tags: ['MARKETING']
+      title: 'Evemen (E-commerce)',
+      category: 'Dynamic',
+      image: '../../public/evemen (1).png',
+      tags: ['MARKETING'],
+      link: 'https://evemen.co/'
     },
     {
-      title: 'Joborba',
-      category: 'Creative',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
-      tags: ['CREATIVE']
+      title: 'Trenzza (E-commerce)',
+      category: 'Dynamic',
+      image: '../../public/trenzza.png',
+      tags: ['CREATIVE'],
+      link: 'https://trenzza.in'
+    },
+    {
+      title: 'Personal Portfolio',
+      category: 'Static',
+      image: '../../public/portfolilo.png',
+      tags: ['CREATIVE'],
+      link: 'https://vinayportfoilo.netlify.app/'
+    },
+    {
+      title: 'Pickles Website',
+      category: 'Static',
+      image: '../../public/pickle.png',
+      tags: ['CREATIVE'],
+      link: 'https://ammammapachadlu2.vercel.app/'
+    },
+    {
+      title: 'Locol Volunteer Network',
+      category: 'Static',
+      image: '../../public/lvn.png',
+      tags: ['CREATIVE'],
+      link: 'https://lvn-frontend.vercel.app/'
     }
   ];
 
-  const filteredProjects = activeFilter === 'ALL' 
-    ? projects 
-    : projects.filter(project => project.tags.includes(activeFilter));
+  const filteredProjects =
+    activeFilter === 'All'
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
     <section id="works" className="bg-black text-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-gray-400 mb-4">Works</p>
-          <h2 className="text-6xl font-bold mb-12">FEATURED PROJECTS</h2>
-          
+          <p className="text-gray-400 mb-4 text-4xl">Works</p>
+          <h2 className="text-3xl font-bold mb-12">FEATURED PROJECTS</h2>
+
           {/* Filter buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {filters.map((filter) => (
@@ -63,13 +87,18 @@ const Works = () => {
               key={index}
               className="group relative overflow-hidden rounded-lg bg-gray-900 hover:transform hover:scale-105 transition-all duration-300"
             >
-              <div className="aspect-w-16 aspect-h-10 overflow-hidden">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block aspect-w-16 aspect-h-10 overflow-hidden"
+              >
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-              </div>
+              </a>
               <div className="absolute top-4 left-4">
                 <span className="bg-black/80 text-white px-3 py-1 rounded-full text-sm">
                   {project.category}
